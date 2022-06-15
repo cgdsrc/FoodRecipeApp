@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url("https://img.freepik.com/free-photo/veggie-quinoa-bowl-cooking-recipe_53876-110662.jpg?w=2000&t=st=1655315272~exp=1655315872~hmac=2f79e9ad644d7311872286286e050c3e739957b7ae1d1286a734d2e422eaedae");
+
+}
+
+nav {
+  padding: 0 1rem;
+}
+.content {
+  min-height: calc(100vh - 70px - 64px);
+  padding: 1.5rem 0;
+}
+
+.goods {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: transparent !important;
+  border: none !important;;
+}
+.card-body{
+  background-color: beige !important;
+}
+
+.card-image > img {
+  width: 100%;
+}
+
+.card-content {
+  flex-grow: 1;
+}
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 3rem;
+  margin: 5rem;
+  height: 100% !important;
+}
+.card:hover{
+  border-color: rgb(30, 50, 105) !important;
+  border:1.3px solid !important;
+}
+.page-footer{
+  background-color: rgb(48, 46, 46);
+  height: 2rem;
+  bottom:0 !important;
+  width:100%;
+  position: fixed;
+}
+.footer-copyright{
+  color: white;
+  height: inherit;
+  padding: 0.3rem;
+}
